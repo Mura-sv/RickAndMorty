@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.location_detail.LocationDetail">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/locationDetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:text="@string/name_location"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/dimensionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="100dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/dimensionview_location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dimension"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignTop="@id/dimensionView"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/dimensionView"
+            android:paddingHorizontal="10dp"
+            android:text="@string/dimension_location"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/typeView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dimensionView"
+            android:layout_alignEnd="@+id/dimensionView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/dimensionView"
+            android:paddingHorizontal="10dp"
+            android:text="@string/typeview_location"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dimension"
+            android:layout_alignTop="@id/typeView"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/dimensionView"
+            android:paddingHorizontal="10dp"
+            android:text="@string/type_location"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/createdView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeView"
+            android:layout_alignEnd="@+id/dimensionView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/dimensionView"
+            android:paddingHorizontal="10dp"
+            android:text="@string/created_"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type"
+            android:layout_alignTop="@id/createdView"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/dimensionView"
+            android:paddingHorizontal="10dp"
+            android:text="@string/created"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.character_detail.CharacterDetail">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/characterDetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="20dp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/character_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/teal_700" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview_image"
+            android:layout_marginTop="30dp"
+            android:gravity="start"
+            android:paddingHorizontal="15dp"
+            android:text="@string/status"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview_image"
+            android:layout_alignTop="@id/status"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/status"
+            android:paddingHorizontal="10dp"
+            android:text="@string/alive"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/species"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:paddingHorizontal="15dp"
+            android:text="@string/species"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/species_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status_text"
+            android:layout_alignTop="@id/species"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/species"
+            android:paddingHorizontal="10dp"
+            android:text="@string/species_type"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/origin"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/species"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:paddingHorizontal="15dp"
+            android:text="@string/origin"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/origin_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/origin"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/origin"
+            android:paddingHorizontal="10dp"
+            android:text="@string/origin_type"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/origin"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:paddingHorizontal="15dp"
+            android:text="@string/gender"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/origin_text"
+            android:layout_alignTop="@id/gender"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/gender"
+            android:paddingHorizontal="10dp"
+            android:text="@string/gender_type"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

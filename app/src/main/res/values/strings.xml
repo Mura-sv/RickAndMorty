@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Rick And Morty</string>
+    <string name="status">Status:</string>
+    <string name="alive">Alive</string>
+    <string name="species">Species:</string>
+    <string name="species_type">Species type</string>
+    <string name="origin">Origin:</string>
+    <string name="origin_type">Origin</string>
+    <string name="gender">Gender:</string>
+    <string name="gender_type">Gender</string>
+    <string name="created">created</string>
+    <string name="created_">Created:</string>
+    <string name="type_location">type</string>
+    <string name="typeview_location">type:</string>
+    <string name="dimension_location">dimension</string>
+    <string name="dimensionview_location">Dimension:</string>
+    <string name="name_location">Name</string>
+    <string name="image_for_character">image for character</string>
+    <string name="name_search_detail">Name</string>
+    <string name="character_text">Character</string>
+    <string name="location_text">Location</string>
+    <string name="episode_text">Episode</string>
+</resources>
